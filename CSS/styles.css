@@ -63,13 +63,12 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; 
+    
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    padding-left: 300px;
-    padding-right: 300px;
+  
     
     overflow: auto;
     
@@ -81,8 +80,8 @@
     padding: 50px;
     margin: auto;
     display: block;
-    width: 60%;
-    max-width: 700px;
+    width: 50%;
+    max-width: 100%;
     border-radius: 10px;
     /* box-shadow: 0px 0px 30px white; */
   }
@@ -97,13 +96,40 @@
    
   }
   
+  .fas{
+    color: white;
+  }
 
-  
+  .fa-chevron-left{
+    size: 4em;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  .fa-chevron-right{
+    size: 4em;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 900px){
     .column{
       flex:50%;
       max-width: 50%;
+    }
+    .modal-content {
+      width: 60%;
+    }
+    .fa-chevron-left{
+      size: 2em;
+      top: 10%;
+      left: 10%;
+    }
+    .fa-chevron-right{
+      size: 2em;
+      top: 10%;
+      right: 10%;
     }
   }
 
@@ -111,5 +137,18 @@
     .column{
       flex:100%;
       max-width: 100%;
+    }
+    .modal-content {
+      width: 80%;
+    }
+    .fa-chevron-left{
+      size: 0.5em;
+      top: 10%;
+      left: 5%;
+    }
+    .fa-chevron-right{
+      size: 0.5em;
+      top: 10%;
+      right: 5%;
     }
   }

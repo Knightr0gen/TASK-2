@@ -24,3 +24,18 @@ function close1(){
     modal.style.display = "none";
     document.getElementById('h').style.display="block";
 }
+
+function prev(j){
+  console.log('prev');
+  let pre = j.previousSibling;
+  let pre1=pre.src;
+  document.getElementById("img1").setAttribute("src", pre1);
+   
+}
+function next(j){
+  console.log('next');
+  let nex = j.nextSibling;
+  let nex1=nex.src;
+  document.getElementById("img1").setAttribute("src", nex1);
+   
+}
