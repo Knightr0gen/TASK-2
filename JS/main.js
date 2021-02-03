@@ -1,13 +1,44 @@
 
 
 function my1Function(i){
-    
     let modal = document.getElementById("myModal");
     let img = i.src;
     console.log(img);
     document.getElementById("img1").setAttribute("src", img);
     modal.style.display = "block";
     document.getElementById('h').style.display="none";
+
+    document.getElementById("prev").addEventListener("click", prev);
+    document.getElementById("next").addEventListener("click", next);
+
+    var x = i.id;
+    
+    function prev(){
+      console.log('prev');
+      let c = document.querySelector('#'+x);
+      let pre = c.previousElementSibling;
+      console.log(pre);
+      let pre1=pre.src;
+      document.getElementById("img1").setAttribute("src", pre1);
+      x = pre.id;
+      
+       
+    }
+
+    function next(){
+     
+      console.log('next');
+      
+      let c = document.querySelector('#'+x);
+      let nex = c.nextElementSibling;
+      console.log(nex);
+      let nex1=nex.src;
+       x = nex.id;
+      
+      document.getElementById("img1").setAttribute("src", nex1);
+       
+    }
+  
 }
 document.addEventListener('keydown', close);
 function close(e){
@@ -18,24 +49,10 @@ function close(e){
     document.getElementById('h').style.display="block";
   }
 }
-document.getElementById("myModal").addEventListener('click', close1);
+document.getElementById("close").addEventListener('click', close1);
 function close1(){
     let modal = document.getElementById("myModal");
     modal.style.display = "none";
     document.getElementById('h').style.display="block";
 }
 
-function prev(j){
-  console.log('prev');
-  let pre = j.previousSibling;
-  let pre1=pre.src;
-  document.getElementById("img1").setAttribute("src", pre1);
-   
-}
-function next(j){
-  console.log('next');
-  let nex = j.nextSibling;
-  let nex1=nex.src;
-  document.getElementById("img1").setAttribute("src", nex1);
-   
-}

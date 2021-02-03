@@ -77,6 +77,7 @@
   
  
   .modal-content {
+
     padding: 50px;
     margin: auto;
     display: block;
@@ -86,14 +87,19 @@
     /* box-shadow: 0px 0px 30px white; */
   }
   
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
+  #close {
+    position: fixed;
+    top: 5%;
+    right: 10%;
     color: black;
-    font-size: 40px;
-    font-weight: bold;
+    
+    
    
+  }
+  .close{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
   }
   
   .fas{
@@ -101,19 +107,22 @@
   }
 
   .fa-chevron-left{
-    size: 4em;
-    position: absolute;
+    font-size: 4em;
+    position: fixed;
     top: 30%;
     left: 10%;
   }
+  .fas{
+    size: 9em;
+  }
   .fa-chevron-right{
-    size: 4em;
-    position: absolute;
+    font-size: 4em;
+    position: fixed;
     top: 30%;
     right: 10%;
   }
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 1024px){
     .column{
       flex:50%;
       max-width: 50%;
@@ -122,16 +131,26 @@
       width: 60%;
     }
     .fa-chevron-left{
-      size: 2em;
-      top: 10%;
+      font-size: 2em;
+      top: 15%;
       left: 10%;
     }
     .fa-chevron-right{
-      size: 2em;
-      top: 10%;
+      font-size: 2em;
+      top: 15%;
       right: 10%;
     }
+    .close{
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+    }
+    
   }
+  /* .prev{
+    width: 50px;
+    height: 50px;
+  } */
 
   @media screen and (max-width: 600px){
     .column{
@@ -142,13 +161,18 @@
       width: 80%;
     }
     .fa-chevron-left{
-      size: 0.5em;
-      top: 10%;
+      size: 2em;
+      top: 15%;
       left: 5%;
     }
     .fa-chevron-right{
-      size: 0.5em;
-      top: 10%;
+      size: 2em;
+      top: 15%;
       right: 5%;
+    }
+    .close{
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
     }
   }
