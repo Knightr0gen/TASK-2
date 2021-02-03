@@ -9,43 +9,57 @@
 <link rel="stylesheet" href="CSS\styles.css">
 </head>
 <body>
-    <div class="header">
+  <div class="row"> 
+    <!-- <div class=" md">
+      <img id="mimg" src="Assets\images\img6.jpg">
+      <button id="close" class="close" >X</button>
+  </div> -->
+    <div id="h"class="header">
         <h1>Gallery</h1>
     </div>
     <div class="header_img">
       <img src="Assets\images\img4.jpg" >
     </div>
-    <div class="row"> 
+   
+    
         <div class="column">
-          <img src="Assets\images\img1.jpg" style="width:100%">
-          <img src="Assets\images\img3.jpg" style="width:100%">
-          <img src="Assets\images\img4.jpg" style="width:100%">
-          <img src="Assets\images\img5.jpg" style="width:100%">
-          <img src="Assets\images\img6.jpg" style="width:100%">
-          <img src="Assets\images\img2.jpg" style="width:100%">
+          <img onclick="my1Function(this)" id="g_img"src="Assets\images\img1.jpg" >
+          <img onclick="my1Function(this)" id="g_img"src="Assets\images\img3.jpg" >
+          <img onclick="my1Function(this)" id="g_img"src="Assets\images\img4.jpg" >
+          <img onclick="my1Function(this)" id="g_img"src="Assets\images\img5.jpg" >
+          <img onclick="my1Function(this)" id="g_img"src="Assets\images\img6.jpg" >
+          <img onclick="my1Function(this)" id="g_img"src="Assets\images\img2.jpg" >
           
         </div>
         
         <div class="column">
-          <img src="Assets\images\img3.jpg" style="width:100%">
-          <img src="Assets\images\img5.jpg" style="width:100%">
-          <img src="Assets\images\img2.jpg" style="width:100%">
-          <img src="Assets\images\img6.jpg" style="width:100%">
-          <img src="Assets\images\img1.jpg" style="width:100%">
-          <img src="Assets\images\img4.jpg" style="width:100%">
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img3.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img5.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img2.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img6.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img1.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img4.jpg" >
         </div> 
          
         <div class="column">
-          <img src="Assets\images\img4.jpg" style="width:100%">
-          <img src="Assets\images\img1.jpg" style="width:100%">
-          <img src="Assets\images\img6.jpg" style="width:100%">
-          <img src="Assets\images\img3.jpg" style="width:100%">
-          <img src="Assets\images\img2.jpg" style="width:100%">
-          <img src="Assets\images\img5.jpg" style="width:100%">
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img4.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img1.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img6.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img3.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img2.jpg" >
+          <img onclick="my1Function(this)"id="g_img"src="Assets\images\img5.jpg" >
           
          
         </div>
         
     </div>
+    <div  id="myModal" class="modal">
+      
+      <img class="modal-content" id="img1">
+      
+      
+    </div>
+   
+    <script src="JS\main.js"></script>
 </body>
 </html>
