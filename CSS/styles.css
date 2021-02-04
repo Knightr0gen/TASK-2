@@ -124,7 +124,7 @@
     font-size: 4em;
     
     position: fixed;
-    top: 30%;
+    top: 35%;
     left: 10%;
   }
   
@@ -132,7 +132,7 @@
     font-size: 4em;
     
     position: fixed;
-    top: 30%;
+    top: 35%;
     right: 10%;
   }
   .modal-content {  
@@ -162,24 +162,24 @@
     }
     .modal-content {
       width: 50%;
-      margin-top: 10%;
+      margin-top: 35%;
       margin-left: 25%;
       margin-bottom: 10%;
     }
     .fa-chevron-left{
       
-      font-size: 2em;
-      top: 15%;
+      font-size: 3em;
+      top: 35%;
       left: 10%;
     }
     .fa-chevron-right{
-      font-size: 2em;
-      top: 15%;
+      font-size: 3em;
+      top: 35%;
       right: 10%;
     }
     .close{
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       font-size: 20px;
     }
     
@@ -199,18 +199,18 @@
     }
     .modal-content {
       width: 60%;
-      margin-top: 10%;
+      margin-top: 60%;
       margin-left: 20%;
       margin-bottom: 10%;
     }
     .fa-chevron-left{
       size: 1em;
-      top: 15%;
+      top: 38%;
       left: 5%;
     }
     .fa-chevron-right{
       size: 1em;
-      top: 15%;
+      top: 38%;
       right: 5%;
     }
     .close{
