@@ -5,15 +5,20 @@
   body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  h1{
+    font-size: 52px;
   }
   
   .header {
     position: absolute;
     display: block;
     text-align: center;
-    padding: 32px;
+    padding: 20px;
     width: 100%;
-    margin-top: 8%;
+    margin-top: 5%;
     max-height: 100vh;
     z-index: 2;
     
@@ -70,19 +75,21 @@
     height: 100%; /* Full height */
   
     
-    overflow: auto;
+    overflow-y: auto;
     
-    background-color: rgba(0,0,0,0.8); 
+    background-color: rgba(0,0,0,0.6); 
   }
   
  
   .modal-content {
 
-    padding: 50px;
-    margin: auto;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-bottom: 10%;
     display: block;
-    width: 50%;
-    max-width: 100%;
+    width: 40%;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
+    max-height: 100vh;
     border-radius: 10px;
     /* box-shadow: 0px 0px 30px white; */
   }
@@ -92,45 +99,75 @@
     top: 5%;
     right: 10%;
     color: black;
-    
-    
-   
   }
   .close{
     width: 50px;
     height: 50px;
     font-size: 30px;
+    border-radius: 100px;
+    border-color: rgba(0,0,0,0.0);
+  }
+  .close:hover{
+    background-color: black;
+    box-shadow: 0 0 20px black;
+    color: white;
   }
   
   .fas{
     color: white;
+    color: rgba(255, 255, 255, 0.7);
   }
-
+  .fas:hover{
+    color: white;
+  }
   .fa-chevron-left{
     font-size: 4em;
+    
     position: fixed;
     top: 30%;
     left: 10%;
   }
-  .fas{
-    size: 9em;
-  }
+  
   .fa-chevron-right{
     font-size: 4em;
+    
     position: fixed;
     top: 30%;
     right: 10%;
   }
+  .modal-content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
 
   @media screen and (max-width: 1024px){
+    h1{
+      font-size: 42px;
+    }
     .column{
       flex:50%;
       max-width: 50%;
     }
     .modal-content {
-      width: 60%;
+      width: 50%;
+      margin-top: 10%;
+      margin-left: 25%;
+      margin-bottom: 10%;
     }
     .fa-chevron-left{
+      
       font-size: 2em;
       top: 15%;
       left: 10%;
@@ -153,26 +190,32 @@
   } */
 
   @media screen and (max-width: 600px){
+    h1{
+      font-size: 32px;
+    }
     .column{
       flex:100%;
       max-width: 100%;
     }
     .modal-content {
-      width: 80%;
+      width: 60%;
+      margin-top: 10%;
+      margin-left: 20%;
+      margin-bottom: 10%;
     }
     .fa-chevron-left{
-      size: 2em;
+      size: 1em;
       top: 15%;
       left: 5%;
     }
     .fa-chevron-right{
-      size: 2em;
+      size: 1em;
       top: 15%;
       right: 5%;
     }
     .close{
-      width: 20px;
-      height: 20px;
-      font-size: 10px;
+      width: 25px;
+      height: 25px;
+      font-size: 12px;
     }
   }

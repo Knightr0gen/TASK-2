@@ -31,11 +31,19 @@ function my1Function(i){
       
       let c = document.querySelector('#'+x);
       let nex = c.nextElementSibling;
-      console.log(nex);
-      let nex1=nex.src;
-       x = nex.id;
+      console.log(nex.src);
+      if(nex == "null"){
+        document.getElementById("img1").setAttribute("src", img);
+        x="g_img1";
+      }
+      else{
+        document.getElementById("img1").setAttribute("src", nex.src);
+        x = nex.id;
+      }
       
-      document.getElementById("img1").setAttribute("src", nex1);
+      
+      
+      
        
     }
   
