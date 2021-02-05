@@ -31,10 +31,12 @@ function my1Function(i){
       
       let c = document.querySelector('#'+x);
       let nex = c.nextElementSibling;
-      console.log(nex.src);
-      if(nex == "null"){
+      console.log(nex)
+      
+      if(nex === null){
         document.getElementById("img1").setAttribute("src", img);
         x="g_img1";
+        
       }
       else{
         document.getElementById("img1").setAttribute("src", nex.src);
